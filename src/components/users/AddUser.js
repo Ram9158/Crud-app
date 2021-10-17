@@ -90,7 +90,7 @@ const AddUser = () => {
            />
           </div> */}
            <div  className="form-group">
-                <input type="file"
+                <input 
                  value={img}
                  className="form-control form-control-lg"
                  type="file"

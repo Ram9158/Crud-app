@@ -12,12 +12,13 @@ const User = () => {
   });
   const { id } = useParams();
   useEffect(() => {
+    const loadUser = async () => {
+      const res = await axios.get(`http://localhost:3003/users/${id}`);
+      setUser(res.data);
+    };
     loadUser();
-  }, []);
-  const loadUser = async () => {
-    const res = await axios.get(`http://localhost:3003/users/${id}`);
-    setUser(res.data);
-  };
+  }, [id]);
+  
   return (
     <div className="container py-4">
       <Link className="btn btn-primary" to="/">

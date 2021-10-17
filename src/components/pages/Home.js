@@ -27,8 +27,8 @@ const Home = () => {
     <div className="container">
       <div className="py-4">
         <h1>Home Page</h1>
-        <table class="table border shadow">
-          <thead class="thead-dark">
+        <table className="table border shadow">
+          <thead className="thead-dark">
             <tr>
               <th scope="col">Sr.No</th>
               <th scope="col">Name</th>
@@ -39,23 +39,23 @@ const Home = () => {
           </thead>
           <tbody>
             {users.map((user, index) => (
-              <tr>
+              <tr key={user.id}>
                 <th scope="row">{index + 1}</th>
                 <td>{user.name}</td>
                 <td>{user.Address}</td>
                 <td>{user.email}</td>
                 <td>
-                  <Link class="btn btn-primary mr-2" to={`/users/${user.id}`}>
+                  <Link className="btn btn-primary mr-2" to={`/users/${user.id}`}>
                     View
                   </Link>
                   <Link
-                    class="btn btn-outline-primary mr-2"
+                    className="btn btn-outline-primary mr-2"
                     to={`/users/edit/${user.id}`}
                   >
                     Edit
                   </Link>
                   <Link
-                    class="btn btn-danger"
+                    className="btn btn-danger"
                     onClick={() => deleteUser(user.id)}
                   >
                     Delete
