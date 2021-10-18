@@ -14,7 +14,7 @@ const AddUser = () => {
     img:""
   });
 
-  const { name, Address, email, phone, Age,img } = user;
+  const { name, Address, email, phone, Age, img } = user;
   const [errors, seterror] = useState({})
 
   const onInputChange = e => {

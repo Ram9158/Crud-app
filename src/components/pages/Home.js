@@ -20,7 +20,7 @@ const Home = () => {
   const deleteUser = async id => {
     await axios.delete(`http://localhost:3003/users/${id}`);
     loadUsers();
-    history.push("/");
+    // history.push("/");
   };
 
   return (
@@ -38,6 +38,7 @@ const Home = () => {
             </tr>
           </thead>
           <tbody>
+
             {users.map((user, index) => (
               <tr key={user.id}>
                 <th scope="row">{index + 1}</th>
@@ -55,7 +56,7 @@ const Home = () => {
                     Edit
                   </Link>
                   <Link
-                    className="btn btn-danger"
+                    className="btn btn-danger"to="/"
                     onClick={() => deleteUser(user.id)}
                   >
                     Delete

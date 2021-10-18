@@ -1,22 +1,3 @@
 {
-  "users": [
-    {
-      "name": "Rameshwar Navnath Kshirsagar",
-      "Address": "At.post shindi tq.kaij dist.beed",
-      "email": "ram@gmail.com",
-      "phone": "9370054709",
-      "Age": "22-year",
-      "img": "C:\\fakepath\\Harsh.jpg",
-      "id": 1
-    },
-    {
-      "name": "yogesh",
-      "Address": "At.post shindi tq.kaij dist.beed",
-      "email": "ram@gmail",
-      "phone": "9370054709",
-      "Age": "22-year",
-      "img": "C:\\fakepath\\Harsh.jpg",
-      "id": 2
-    }
-  ]
+  "users": []
 }
