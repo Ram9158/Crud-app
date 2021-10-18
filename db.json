@@ -19,14 +19,22 @@
       "id": 3
     },
     {
-      "name": "aslam shaikh",
-      "Address": "At.post aadas tq.kaij dist.beed",
-      "email": "aslam@gmail.com",
-      "phone": "9898989898",
-      "Age": "10-year",
-      "img": "https://image.shutterstock.com/image-photo/rural-indian-child-sitting-on-600w-670380598.jpg",
+      "name": "Ram Kshirsagar",
+      "Address": "at post beed tq.ambajogai",
+      "email": "ram23232@gmail.com",
+      "phone": "91919191991",
+      "Age": "25-year",
+      "img": "https://image.shutterstock.com/image-photo/portrait-stylish-arab-beard-afro-600w-1915620277.jpg",
+      "id": 4
+    },
+    {
+      "name": "pankaj patole",
+      "Address": "At post dharur tq.dharur",
+      "email": "pankaj@gmail.com",
+      "phone": "7091912321",
+      "Age": "23-year",
+      "img": "https://image.shutterstock.com/image-photo/portrait-young-man-afro-hair-600w-1915620130.jpg",
       "id": 4
     }
-   
   ]
 }
