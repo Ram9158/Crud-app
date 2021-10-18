@@ -41,6 +41,7 @@ const AddUser = () => {
               placeholder="Enter Your Name"
               name="name"
               required='true'
+              autoComplete="off"
               value={name}
               onChange={e => onInputChange(e)}
             />
@@ -53,6 +54,7 @@ const AddUser = () => {
               className="form-control form-control-lg"
               placeholder="Enter Your Address"
               required='true'
+              autoComplete="off"
               name="Address"
               value={Address}
               onChange={e => onInputChange(e)}
@@ -64,6 +66,7 @@ const AddUser = () => {
               className="form-control form-control-lg"
               placeholder="Enter Your E-mail"
               name="email"
+              autoComplete="off"
               required="true"
               value={email}
               onChange={e => onInputChange(e)}
@@ -78,6 +81,7 @@ const AddUser = () => {
               placeholder="Enter Your Phone Number"
               name="phone"
               value={phone}
+              autoComplete="off"
               required='true'
               onChange={e => onInputChange(e)}
             />

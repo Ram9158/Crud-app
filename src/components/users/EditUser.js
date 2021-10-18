@@ -45,6 +45,7 @@ const EditUser = () => {
               className="form-control form-control-lg"
               placeholder="Enter Your Name"
               name="name"
+              autocomplete="off"
               value={name}
               onChange={e => onInputChange(e)}
             />
@@ -62,6 +63,8 @@ const EditUser = () => {
           <div className="form-group">
             <input
               type="email"
+              autocomplete="off"
+
               className="form-control form-control-lg"
               placeholder="Enter Your E-mail"
               name="email"
