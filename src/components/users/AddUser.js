@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from 'axios'
 import { useHistory } from "react-router-dom";
+import validation from './Validation'
 
 const AddUser = () => {
   let history = useHistory();
@@ -14,12 +15,16 @@ const AddUser = () => {
   });
 
   const { name, Address, email, phone, Age,img } = user;
+  const [errors, seterror] = useState({})
+
   const onInputChange = e => {
     setUser({ ...user, [e.target.name]: e.target.value });
   };
 
   const onSubmit = async e => {
     e.preventDefault();
+    seterror(validation(name,email,phone))
+
     await axios.post("http://localhost:3003/users", user);
     history.push("/");
   };
@@ -39,6 +44,8 @@ const AddUser = () => {
               value={name}
               onChange={e => onInputChange(e)}
             />
+            {errors.name && <p>{errors.name}</p>}
+
           </div>
           <div className="form-group">
             <input
@@ -61,6 +68,8 @@ const AddUser = () => {
               value={email}
               onChange={e => onInputChange(e)}
             />
+            {errors.email && <p>{errors.email}</p>}
+
           </div>
           <div className="form-group">
             <input
@@ -72,6 +81,8 @@ const AddUser = () => {
               required='true'
               onChange={e => onInputChange(e)}
             />
+            {errors.phone && <p>{errors.phone}</p>}
+
           </div>
           <div className="form-group">
             <input
