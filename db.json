@@ -1,3 +1,32 @@
 {
-  "users": []
+  "users": [
+    {
+      "name": "Rameshwar Navnath Kshirsagar",
+      "Address": "At.post shindi tq.kaij dist.beed",
+      "email": "ram@gmail",
+      "phone": "9370054709",
+      "Age": "21- year",
+      "img": "https://image.shutterstock.com/image-photo/rural-indian-child-sitting-on-600w-670380598.jpg",
+      "id": 1
+    },
+    {
+      "name": "yogesh kendre",
+      "Address": "At.post kaij tq.kaij dist.beed",
+      "email": "yoga@gmail.com",
+      "phone": "9878988792",
+      "Age": "15-year",
+      "img": "https://image.shutterstock.com/image-photo/rural-indian-child-sitting-on-600w-670380598.jpg",
+      "id": 3
+    },
+    {
+      "name": "aslam shaikh",
+      "Address": "At.post aadas tq.kaij dist.beed",
+      "email": "aslam@gmail.com",
+      "phone": "9898989898",
+      "Age": "10-year",
+      "img": "https://image.shutterstock.com/image-photo/rural-indian-child-sitting-on-600w-670380598.jpg",
+      "id": 4
+    }
+   
+  ]
 }

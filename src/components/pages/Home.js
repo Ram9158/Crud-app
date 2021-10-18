@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link,useHistory} from "react-router-dom";
+import { Link} from "react-router-dom";
 
 
 const Home = () => {
-  let history = useHistory();
 
   const [users, setUser] = useState([]);
 
@@ -20,7 +19,6 @@ const Home = () => {
   const deleteUser = async id => {
     await axios.delete(`http://localhost:3003/users/${id}`);
     loadUsers();
-    // history.push("/");
   };
 
   return (

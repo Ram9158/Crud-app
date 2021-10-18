@@ -8,7 +8,8 @@ const User = () => {
     Address: "",
     email: "",
     phone: "",
-    Age: ""
+    Age: "",
+    img:{}
   });
   const { id } = useParams();
   useEffect(() => {
@@ -33,6 +34,13 @@ const User = () => {
         <li className="list-group-item">phone: {user.phone}</li>
         <li className="list-group-item">Age: {user.Age}</li>
       </ul>
+      <div className="display-4">
+        <img
+          src={user.img}
+          alt={"Avatar"}
+          style={{width:'20%', height:'20%'}} 
+        /> 
+      </div>
     </div>
   );
 };
